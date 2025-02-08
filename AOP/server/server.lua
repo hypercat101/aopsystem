@@ -1,6 +1,6 @@
 local lastAOPChange = 0
 
--- Helper function to get Discord ID
+-- Helper function to get Discord ID TO PING THE PLAYER WHO DID THE ACTION
 local function GetDiscordId(source)
     local identifiers = GetPlayerIdentifiers(source)
     for _, id in ipairs(identifiers) do
