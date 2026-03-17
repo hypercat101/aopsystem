@@ -1,7 +1,6 @@
 local currentAOP = Config.DefaultAOP
 local displayText = true
 
--- UI Display
 CreateThread(function()
     while true do
         Wait(0)
@@ -17,7 +16,6 @@ CreateThread(function()
     end
 end)
 
--- Register command for AOP menu
 RegisterCommand('aop', function()
     local input = lib.inputDialog('Set AOP Location', {
         {
@@ -34,7 +32,6 @@ RegisterCommand('aop', function()
     end
 end, false)
 
--- Network event handler
 RegisterNetEvent('updateAOP')
 AddEventHandler('updateAOP', function(newAOP)
     currentAOP = newAOP
