@@ -16,5 +16,5 @@ lib.callback.register('aop:selectLocation', function()
     })
 
     if not input then return nil end
-    return input[1]  -- Return the selected location
+    return input[1]  
 end) 
